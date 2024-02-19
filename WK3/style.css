@@ -129,3 +129,47 @@ h1 {
   padding: 10px;
   text-align: center;
 }
+
+/* d */
+.header-d {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  background-color: blue;
+  padding: 40px 20px;
+}
+
+.main-container-d {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.main-links-d {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: yellow;
+  text-align: center;
+  padding: 20px;
+}
+
+.main-content-d {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.content-section-d {
+  color: white;
+  background-color: #18188f;
+}
+
+.right-section-d {
+  background-color: #8ae3a2;
+  padding: 20px;
+}
+
+.footer-d {
+  color: white;
+  background-color: green;
+  padding: 10px;
+  text-align: center;
+}
