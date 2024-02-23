@@ -19,4 +19,4 @@ const myLoadFunction = () => {
     el2.firstChild.nodeValue = 'The quick brown fox runs over the lazy dog'
 }
 
-document.addEventListener('DOMContentLoaded', myLoadFunction)
+document.addEventListener('click', myLoadFunction)
