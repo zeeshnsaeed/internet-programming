@@ -19,4 +19,5 @@ const myLoadFunction = () => {
     el2.firstChild.nodeValue = 'The quick brown fox runs over the lazy dog'
 }
 
-document.addEventListener('click', myLoadFunction)
+var el = document.getElementById('name')
+el.addEventListener('click', myLoadFunction)
