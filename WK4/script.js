@@ -12,36 +12,30 @@
 // };
 
 
+const updateElement = (id, value) => {
+    const el = document.getElementById(id);
+    el.firstChild.nodeValue = value;
+};
+
 const myLoadFunction = () => {
-    var el = document.getElementById('name')
-    el.firstChild.nodeValue = 'Zeeshan Saeed'
-}
+    updateElement('name', 'Zeeshan Saeed');
+};
 
 const myLoadFunction2 = () => {
-    var el = document.getElementById('quote')
-    el.firstChild.nodeValue = 'The quick brown fox runs over the lazy dog'
-}
+    updateElement('quote', 'The quick brown fox runs over the lazy dog');
+};
 
 const myLoadFunction3 = () => {
-    var el = document.getElementById('address')
-    el.firstChild.nodeValue = 'Northampton, UK'
-}
+    updateElement('address', 'Northampton, UK');
+};
 
 const myLoadFunction4 = () => {
-    var el = document.getElementById('age')
-    el.firstChild.nodeValue = '25'
-}
+    updateElement('age', '25');
+};
 
-var el = document.getElementById('name')
-var el2 = document.getElementById('quote')
-var el3 = document.getElementById('address')
-var el4 = document.getElementById('age')
-
-
-
-el.addEventListener('click', myLoadFunction)
-el2.addEventListener('click', myLoadFunction2)
-el3.addEventListener('mouseenter', myLoadFunction3)
-el4.addEventListener('mouseleave', myLoadFunction4)
+document.getElementById('name').addEventListener('click', myLoadFunction);
+document.getElementById('quote').addEventListener('click', myLoadFunction2);
+document.getElementById('address').addEventListener('mouseenter', myLoadFunction3);
+document.getElementById('age').addEventListener('mouseleave', myLoadFunction4);
 
 
