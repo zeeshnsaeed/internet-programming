@@ -14,10 +14,16 @@
 
 const myLoadFunction = () => {
     var el = document.getElementById('name')
-    var el2 = document.getElementById('quote')
     el.firstChild.nodeValue = 'Zeeshan Saeed'
-    el2.firstChild.nodeValue = 'The quick brown fox runs over the lazy dog'
+}
+
+const myLoadFunction2 = () => {
+    var el = document.getElementById('quote')
+    el.firstChild.nodeValue = 'The quick brown fox runs over the lazy dog'
 }
 
 var el = document.getElementById('name')
+var el2 = document.getElementById('quote')
+
 el.addEventListener('click', myLoadFunction)
+el2.addEventListener('click', myLoadFunction2)
